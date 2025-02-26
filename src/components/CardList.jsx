@@ -2,9 +2,12 @@ import Card from "./Card";
 
 const CardList = () => {
     return (
-        <section>
-            <Card />
+        <section className="p-4">
+            <div>
+                <Card />
+            </div>
         </section>
     )
 };
-export default CardList;
+
+export default CardList

@@ -1,8 +1,8 @@
 const Header = () => {
     return (
-        <header >
-            <h1>react api</h1>
+        <header className="bg-gray-800 text-white text-center py-4 shadow-md">
+            <h1 className="text-3xl font-bold">React API</h1>
         </header>
     )
 };
-export default Header ;     
+export default Header;

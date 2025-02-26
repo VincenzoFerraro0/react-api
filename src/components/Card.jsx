@@ -13,21 +13,24 @@ const Card = () => {
     return (
         <>
             <ul>
-            {
-                posts.map((post) => {
-                    return (
-                        <li key={post.id}>
-                            <span>{post.title}</span>
-                            <figure>
-                                <img height={100} width={100} src={post.url} alt="" />
-                            </figure>
-                            <p>{post.content}</p>
-                        </li>
-                    )
-                })
-            }
+                {
+                    posts.map((post) => {
+                        return (
+                            <li key={post.id}>
+                                <h3>{post.title}</h3>
+                                <figure >
+                                    <img 
+                                        src={post.url}
+                                        alt={post.title}
+                                    />
+                                </figure>
+                                <p>{post.content}</p>
+                            </li>
+                        )
+                    })
+                }
             </ul>
-            
+
         </>
     )
 };
